@@ -1,16 +1,4 @@
-Journal = function(title, entryDate, content) {
-  this.title = title;
-  this.entryDate = entryDate;
-  this.content = content;
-}
-
-  Journal.prototype.wordCount = function() {
-    var content = this.content;
-    return content.split(' ').length;
-  }
-
   $(document).ready(function() {
-
 
   $("form#journalEntry").submit(function(event) {
     event.preventDefault();
