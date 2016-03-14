@@ -5,6 +5,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var utilities = require('gulp-util');
 var del = require('del');
+var jshint = require('gulp-jshint');
+var moment = require('moment');
 
 var buildProduction = utilities.env.production;
 
@@ -37,4 +39,10 @@ gulp.task("build", function() {
   } else {
     gulp.start('jsBrowserify');
   }
+});
+
+gulp.task('jshint', function() {
+  return gulp.src(['js/*.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
