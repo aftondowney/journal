@@ -28,3 +28,8 @@ $(document).ready(function(){
     $('#solution').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
   });
 });
+
+$(document).ready(function(){
+
+  $('#time').text(moment().format("MMM Do YYYY, h:mm a"));
+});

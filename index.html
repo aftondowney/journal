@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <meta charset="utf-8">
     <title>!!!!!!!!!!!!!Journal!!!!!!!!!!!</title>
   </head>
   <body>
-    <form id="journalEntry">
-     <label for="title">Enter a Title:</label>
-     <input id="title" type="text">
-     <input id="entryDate" type="date">
-     <label for="content">How was your day?</label>
-     <input id="content" type="text">
-     <button type="submit">Submit</button>
-   </form>
-   <form id="signup">
-      <label for="email">Enter your email:</label>
-      <input id="email" type="text">
-      <button type="submit">Submit</button>
-    </form>
+    <div class="container">
 
-     <ul id="entry">
+      <h3>Well look at the time! </h3>
+      <h3 id="time"></h3>
 
-     </ul>
+      <form id="journalEntry">
+       <label for="title">Enter a Title:</label>
+       <input id="title" type="text">
+       <input id="entryDate" type="date"><br>
+       <label for="content">How was your day?</label>
+       <input id="content" type="text"><br><br>
+       <button type="submit">Submit</button>
+     </form>
+     <!-- <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input id="email" type="text">
+        <button type="submit">Submit</button>
+      </form> -->
+
+       <ul id="entry">
+
+       </ul>
+   </div>
   </body>
 </html>

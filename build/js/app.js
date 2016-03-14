@@ -3733,4 +3733,9 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+
+  $('#time').text(moment().format("MMM Do YYYY, h:mm a"));
+});
+
 },{"./../js/journal-entry.js":1,"moment":2}]},{},[3]);
