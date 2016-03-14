@@ -1,4 +1,4 @@
-var Journal = require('./journal-entry.js').Journal;
+var Journal = require('./../js/journal-entry.js').Journal;
 
 $(document).ready(function() {
 
