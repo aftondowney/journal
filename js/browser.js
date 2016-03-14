@@ -1,4 +1,6 @@
-  $(document).ready(function() {
+var Journal = require('./journal-entry.js').Journal;
+
+$(document).ready(function() {
 
   $("form#journalEntry").submit(function(event) {
     event.preventDefault();
